@@ -1,0 +1,144 @@
+/* src/Pages/Experience.css */
+
+/* 1. Contenedor General (Fondo gris igual que Presentación para continuidad) */
+.experience-wrapper {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experience-content {
+  max-width: 800px;
+  margin: 0 auto; /* Centrado */
+}
+
+/* Título de la página */
+.page-title {
+  text-align: center;
+  color: #1e293b; /* Gris oscuro azulado */
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+/* 2. Contenedor de la Línea de Tiempo */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Espacio entre tarjetas */
+}
+
+/* 3. Tarjeta de Trabajo INDIVIDUAL */
+.job-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra muy suave */
+  border-left: 6px solid #3b82f6; /* Borde AZUL a la izquierda (Acento) */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el mouse: se levanta un poquito */
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabecera de la tarjeta (Título y Fecha) */
+.job-header {
+  display: flex;
+  justify-content: space-between; /* Separa título a la izq y fecha a la der */
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap; /* Para que en celulares baje si no cabe */
+  gap: 0.5rem;
+}
+
+.job-role h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #111827;
+}
+
+.company {
+  display: block;
+  color: #3b82f6; /* Nombre de empresa en azul */
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.job-date {
+  background-color: #f1f5f9; /* Pill gris claro */
+  color: #64748b;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Descripción del trabajo */
+.job-description {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Etiquetas (Tags) de tecnologías usadas */
+.job-tags {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.job-tags span {
+  font-size: 0.8rem;
+  color: #2563eb;
+  background-color: #eff6ff; /* Azul muy pálido */
+  border: 1px solid #dbeafe;
+  padding: 0.2rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* 4. Sección de Educación */
+.section-subtitle {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive automático */
+  gap: 1.5rem;
+}
+
+.education-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-top: 4px solid #10b981; /* Borde VERDE arriba para diferenciar educación */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.education-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.institution {
+  display: block;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.edu-date {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}

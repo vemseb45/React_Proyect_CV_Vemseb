@@ -1,0 +1,168 @@
+/* src/Pages/Contacto.css */
+
+/* 1. Wrapper General */
+.contact-wrapper {
+  background-color: #f3f4f6; /* Gris claro (Consistencia con las otras páginas) */
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Títulos */
+.contact-title {
+  text-align: center;
+  color: #1e293b;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 2. Grid Container: Divide en 2 columnas (Info | Formulario) */
+.contact-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* La info ocupa 1 parte, el form ocupa 2 partes */
+  gap: 2rem;
+  align-items: start;
+}
+
+/* 3. Columna Izquierda: Tarjeta de Información (Estilo Azul) */
+.contact-info-card {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); /* Degradado azul profesional */
+  color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-card h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2); /* Círculo semitransparente */
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.info-item h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-item p {
+  margin: 0.3rem 0 0 0;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* 4. Columna Derecha: El Formulario (Blanco) */
+.contact-form {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #374151; /* Gris oscuro texto */
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Estilos de los inputs y textarea */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d1d5db; /* Gris borde suave */
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  background-color: #f9fafb;
+}
+
+/* Efecto al hacer clic en un campo (Focus) */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3b82f6; /* Borde se vuelve azul */
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1); /* Resplandor azul suave */
+}
+
+/* Botón de Enviar */
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8; /* Azul más oscuro al pasar mouse */
+  transform: translateY(-2px); /* Se eleva un poquito */
+}
+
+.submit-btn:active {
+  transform: translateY(0); /* Al hacer clic baja */
+}
+
+/* 5. Diseño Responsivo (Para Celulares) */
+@media (max-width: 768px) {
+  .contact-grid-container {
+    grid-template-columns: 1fr; /* Una sola columna vertical */
+  }
+  
+  .contact-info-card {
+    margin-bottom: 1rem;
+  }
+}
