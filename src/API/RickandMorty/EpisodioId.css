@@ -1,0 +1,191 @@
+/* src/API/RickandMorty/EpisodioId.css */
+
+/* 1. Fondo general */
+.episode-wrapper {
+  background-color: #ffffff; /* Fondo blanco limpio para igualar a Busqueda ID */
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo verticalmente */
+}
+
+.episode-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* 2. Título principal - IGUAL A BUSQUEDA ID (Letra Serif) */
+.api-title {
+  text-align: center;
+  color: #1e293b; /* Color oscuro serio */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  /* Esta es la clave para que se vea igual a tu imagen de referencia: */
+  font-family: 'Georgia', 'Times New Roman', serif; 
+}
+
+.highlight {
+  color: #1e293b; /* Quitamos el azul para que sea todo negro/serio como la referencia */
+}
+
+/* 3. Sección del Buscador (Alineación Horizontal) */
+.search-card {
+  /* Quitamos el fondo blanco de tarjeta para que se vea limpio como en Busqueda ID */
+  background: transparent; 
+  box-shadow: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.search-card label {
+  display: none; /* Ocultamos el label de arriba para que se vea más limpio */
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Espacio entre input y botón */
+  align-items: center;
+}
+
+.input-group input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #cbd5e1; /* Borde gris suave */
+  border-radius: 6px; /* Bordes redondeados sutiles */
+  font-size: 1rem;
+  width: 280px; /* Ancho similar a Busqueda ID */
+  outline: none;
+  background-color: #fff;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.search-btn {
+  background-color: #2563eb; /* EL MISMO AZUL EXACTO */
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Segoe UI', sans-serif; /* El botón mantiene letra moderna para leerse bien */
+  transition: background 0.2s;
+}
+
+.search-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* 4. Mensaje de Error */
+.error-msg {
+  background-color: #fef2f2;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #fca5a5;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+}
+
+/* 5. Tarjeta de Resultados (Donde sale la info del episodio) */
+.result-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  /* Sombra suave idéntica a las otras tarjetas */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  animation: fadeIn 0.5s ease;
+}
+
+.episode-header {
+  text-align: center;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.episode-header h2 {
+  font-family: 'Georgia', 'Times New Roman', serif; /* Título del episodio también en Serif */
+  color: #1f2937;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.episode-header p {
+  color: #64748b;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Grilla de Personajes */
+.chars-title {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #334155;
+  font-weight: 700;
+  font-family: 'Georgia', 'Times New Roman', serif; /* Subtítulo en Serif */
+}
+
+.chars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.char-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  background-color: #fff;
+}
+
+.char-card:hover {
+  transform: translateY(-5px);
+  border-color: #93c5fd;
+}
+
+.char-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.char-info {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.char-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 0;
+  color: #1e293b;
+}
+
+.char-species {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

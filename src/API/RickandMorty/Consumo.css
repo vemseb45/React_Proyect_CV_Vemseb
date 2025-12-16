@@ -1,0 +1,61 @@
+/* src/API/RickandMorty/Consumo.css */
+
+.consumo-wrapper {
+  padding: 2rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.consumo-title {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+/* La Grilla Mágica: Se adapta a cualquier pantalla */
+.personajes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* La Tarjeta Individual */
+.personaje-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden; /* Para que la imagen respete los bordes redondos */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  border: 1px solid #e2e8f0;
+}
+
+.personaje-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+}
+
+.personaje-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.personaje-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.personaje-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #334155;
+}
+
+.personaje-info p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}

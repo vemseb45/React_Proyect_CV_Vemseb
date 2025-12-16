@@ -21,10 +21,13 @@ export default function Navigation() {
         </li>
         {/* Agrega aquí tus otras rutas si las necesitas */}
         <li>
-          <Link to="/consumo" className="nav-btn">Consumo API</Link>
+          <Link to="/consumo" className="nav-btn">Lista Personajes</Link>
         </li>
         <li>
-          <Link to="/envio" className="nav-btn">Busqueda ID</Link>
+          <Link to="/envio" className="nav-btn">Busqueda Personajes</Link>
+        </li>
+        <li>
+          <Link to="/episodios" className="nav-btn">Busqueda Capitulo</Link>
         </li>
 
       </ul>
