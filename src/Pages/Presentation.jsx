@@ -25,11 +25,11 @@ export default function Presentacion() {
           </div>
 
           <div className="profile-info-header">
-            <h1>Vemseb</h1>
+            <h1>Sebastian</h1>
             <h2>Desarrollador Frontend React</h2>
             {/* Pequeña info de contacto rápido tipo la imagen 1 */}
             <div className="quick-contact">
-              <span>📍 Ciudad, País</span> | <span>📧 email@ejemplo.com</span>
+              <span>📍 Ciudad, País</span> | <span>📧 email@.com</span>
             </div>
           </div>
         </header>
